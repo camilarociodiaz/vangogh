@@ -15,6 +15,7 @@ function App() {
   
   const generateImage = async () => {
     const res = await openai.createImage({
+      model: "text-davinci-002",
       prompt: prompt,
       n: 1,
       size: "512x512",
